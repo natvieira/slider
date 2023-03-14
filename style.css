@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     width: 800px;
     height: 400px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .slides{
@@ -42,3 +42,31 @@ body{
     justify-content: center;
 }
 
+.manual-btn{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: red;
+}
+
+#radio1:checked ~ .first{
+    margin: 0;
+}
+
+#radio2:checked ~ .first{
+    margin: -12.5%;
+}
+
+#radio3:checked ~ .first{
+    margin: -25%;
+}
+
+#radio4:checked ~ .first{
+    margin: -37.5%;
+}
